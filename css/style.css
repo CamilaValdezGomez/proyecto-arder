@@ -1,0 +1,390 @@
+@font-face {
+        font-family: "Quattrocento";
+        src: url("../recursos/type-letras/Quattrocento-Regular.ttf");
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Signika+Negative:wght@300&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "SignikaNegaive";
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    height: 8.7vh;
+    padding: 8px 2%;
+    background-image: linear-gradient(to right, #9795f0, #fbc8d4);
+}
+
+
+
+header a {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+body header nav ul {
+
+    display: flex;
+    text-align: center;
+    list-style: none;
+
+}
+main{
+    margin: 75px;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+
+
+.logo img {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+    margin-right: 8px;
+}
+
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+}
+
+.menu li a {
+    font-size: 20;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #d09f21;
+
+}
+
+.letras {
+    color: white;
+    list-style: none;
+}
+
+.parrafo-main {
+    text-align: center;
+    color: #010000;
+    font-size: 20px;
+    margin: 2% 6% 2% 6%;
+    font-family: "Quattrocento"
+
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.video {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+iframe {
+    width: 60%;
+}
+
+
+.inciensoss {
+    width: 23vw;
+    text-align: center;
+    padding: 8px;
+}
+
+.tarjeta-incienso {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.margin {
+    margin: 16px;
+}
+
+.TituloTaller{
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: "SignikaNegaive"
+}
+
+.Meditaciontalleres{
+    text-align: right;
+    margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.Meditacionenelagua{
+    text-align: left;
+    margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+
+h2 {
+    font-size: 20px;
+    font-family: 'Quattrocento';
+    text-align: center;    
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-size: 17px;
+    font-family: 'Lora', serif;
+    padding: 2% 6% 2% 6%;
+    text-align: center;
+    
+}
+
+p {
+    font-family: 'Quattrocento';
+    text-align: center;
+}
+
+.primertexto{
+    text-align: left;
+}
+ .segundotexto{
+    text-align: right;
+ }
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.formulario label {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.formulario button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*Form contacto*/
+form {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #ccc;
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+/* Informacion
+
+ .formulario
+ {
+display: flex;
+flex-direction: column;
+margin: 10%;
+text-align: center;
+ }*/
+
+/*
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+} 
+
+
+button[type="submit"] {
+    background-color: #a8caba;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+    background-color: #5d4157;
+}*/
+
+/*CONTACTO*/
+.contacto {
+    max-width: 600px;
+}
+
+.tick {
+    padding: 0;
+}
+
+footer {
+    background-image: linear-gradient(to right, #9795f0, #fbc8d4);
+    padding: 20px;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+footer div ul li a {
+    text-decoration: none;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    display: inline-block;
+}
+
+.column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.column h3 {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-links li {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .formulario label {
+        font-size: 14px;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario input[type="tel"],
+    .formulario textarea {
+        font-size: 14px;
+    }
+
+    .formulario button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Encabezado */
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .logo p {
+        font-size: 16px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu li {
+        padding: 10px;
+    }
+
+
+}

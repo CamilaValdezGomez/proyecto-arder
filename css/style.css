@@ -1,17 +1,19 @@
+/* Fuentes */
 @font-face {
-        font-family: "Quattrocento";
-        src: url("../recursos/type-letras/Quattrocento-Regular.ttf");
-    }
+    font-family: "Quattrocento";
+    src: url("../recursos/type-letras/Quattrocento-Regular.ttf");
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Signika+Negative:wght@300&display=swap');
 
-
+/* Estilos generales */
 * {
     margin: 0px;
     padding: 0px;
     font-family: "SignikaNegaive";
 }
 
+/* Encabezado */
 header {
     display: flex;
     justify-content: flex-end;
@@ -21,99 +23,68 @@ header {
     background-image: linear-gradient(to right, #9795f0, #fbc8d4);
 }
 
-
-
-header a {
-    margin-top: 8px;
-    font-size: 20px;
-}
-
-body header nav ul {
-
-    display: flex;
-    text-align: center;
-    list-style: none;
-
-}
-main{
-    margin: 75px;
-}
-
-.contenedor-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.logo {
+header .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    position: absolute;
+    left: 2%;
 }
 
-header div {
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-header nav {
-    margin-left: auto;
-}
-
-
-
-.logo img {
+header .logo img {
     height: 60px;
     width: auto;
     transition: all 0.3s;
     margin-right: 8px;
 }
 
-
-.logo img:hover {
-    transform: scale(1.2);
-}
-
-.menu {
+header nav ul {
+    display: flex;
+    text-align: center;
     list-style: none;
 }
 
-.menu li {
+header .menu {
+    list-style: none;
+    margin-right: 30px;
+}
+
+header .menu li {
     display: inline-block;
     padding: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
 }
 
-.menu li:hover {
+header .menu li:hover {
     transform: scale(1.1);
 }
 
-.menu li a {
-    font-size: 20;
+header .menu li:last-child {
+    margin-right: 30px;
+}
+
+header .menu li a {
+    font-size: 20px;
     color: white;
     text-decoration: none;
 }
 
-.menu li a:hover {
+header .menu li a:hover {
     color: #d09f21;
-
 }
 
-.letras {
+header .letras {
     color: white;
     list-style: none;
 }
 
+/* Contenido principal */
 .parrafo-main {
     text-align: center;
     color: #010000;
     font-size: 20px;
     margin: 2% 6% 2% 6%;
     font-family: "Quattrocento"
-
 }
 
 .mb-16 {
@@ -129,7 +100,6 @@ header nav {
 iframe {
     width: 60%;
 }
-
 
 .inciensoss {
     width: 23vw;
@@ -154,6 +124,24 @@ iframe {
     font-family: "SignikaNegaive"
 }
 
+.Meditaciontalleres img {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.Meditaciontalleres img:hover {
+    opacity: 0.5;
+}
+.Meditacionenelagua img {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.Meditacionenelagua img:hover {
+    opacity: 0.5;
+}
 .Meditaciontalleres{
     text-align: right;
     margin-top: 2%;
@@ -172,20 +160,20 @@ h2 {
     font-family: 'Quattrocento';
     text-align: center;    
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 h3 {
-    font-size: 17px;
+    font-size: 19px;
     font-family: 'Lora', serif;
-    padding: 2% 6% 2% 6%;
-    text-align: center;
+    margin-bottom: 2%;
+
     
 }
 
 p {
     font-family: 'Quattrocento';
-    text-align: center;
+  
 }
 
 .primertexto{
@@ -335,13 +323,18 @@ footer div ul li a {
     margin-top: 0;
 }
 
-@media screen and (max-width: 768px) {
+
+
+
+
+
+@media screen and (max-width: 600px) {
     .footer-links li {
         margin-right: 10px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .formulario label {
         font-size: 14px;
     }
@@ -359,7 +352,7 @@ footer div ul li a {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
     /* Encabezado */
     header {
@@ -368,6 +361,39 @@ footer div ul li a {
         height: auto;
     }
 
+
+
+@media only screen and (max-width: 600px) {
+ 
+    header h1 {
+      font-size: 24px;
+    }
+  
+    header .logo img {
+      width: 80%;
+    }
+  
+
+    header nav {
+      flex-direction: column;
+    }
+  
+
+    header nav ul {
+      margin-top: 20px;
+    }
+  
+ 
+    main .video iframe {
+      width: 100%;
+    }
+  
+
+    footer .column {
+      width: 100%;
+    }
+  }
+  
     .logo {
         margin-bottom: 10px;
     }
@@ -388,3 +414,17 @@ footer div ul li a {
 
 
 }
+
+@media only screen and (max-width: 600px) {
+    .TituloTaller {
+      font-size: 1.5em;
+    }
+  
+    .primertexto {
+      font-size: 1em;
+    }
+  
+    .segundotexto {
+      font-size: 1em;
+    }
+  }

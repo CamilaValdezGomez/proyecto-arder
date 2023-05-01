@@ -113,7 +113,18 @@ iframe {
     flex-wrap: wrap;
     display: flex;
 }
-
+.contenedor-tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tarjeta-incienso > div {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px;
+    text-align: center;
+  }
+  
 .margin {
     margin: 16px;
 }
@@ -334,22 +345,6 @@ footer div ul li a {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .formulario label {
-        font-size: 14px;
-    }
-
-    .formulario input[type="text"],
-    .formulario input[type="email"],
-    .formulario input[type="tel"],
-    .formulario textarea {
-        font-size: 14px;
-    }
-
-    .formulario button[type="submit"] {
-        font-size: 14px;
-    }
-}
 
 
 @media screen and (max-width: 600px) {
@@ -361,10 +356,6 @@ footer div ul li a {
         height: auto;
     }
 
-
-
-@media only screen and (max-width: 600px) {
- 
     header h1 {
       font-size: 24px;
     }
@@ -392,7 +383,7 @@ footer div ul li a {
     footer .column {
       width: 100%;
     }
-  }
+  
   
     .logo {
         margin-bottom: 10px;
@@ -415,16 +406,56 @@ footer div ul li a {
 
 }
 
-@media only screen and (max-width: 600px) {
+/*Talleres */
+
+@media (max-width: 600px) {
     .TituloTaller {
-      font-size: 1.5em;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  
+    .Meditaciontalleres img, .Meditacionenelagua img {
+      width: 100%;
     }
   
     .primertexto {
-      font-size: 1em;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    .segundotexto{
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+    .formulario {
+      margin-top: 20px;
+      width: 100%;
     }
   
-    .segundotexto {
-      font-size: 1em;
+    .formulario label, .formulario input, .formulario textarea, .formulario button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .formulario label {
+      display: block;
+      font-size: 14px;
+    }
+  
+    .formulario input, .formulario textarea {
+      padding: 10px;
+      font-size: 16px;
+    }
+  
+    .formulario button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
     }
   }
+  
